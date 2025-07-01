@@ -20,7 +20,7 @@
       <!-- Content container (50% width, left aligned) -->
       <div class="w-full md:w-4/6 text-left space-y-6 px-4 md:px-12">
         <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
-        <p class="text-lg md:text-xl">Systems Engineer | Maker | Creative</p>
+        <p class="text-lg md:text-xl">Systems Engineer | Builder | Curious Mind</p>
         <!-- Typing Effect -->
         <div class="font-mono text-brand-secondary text-xl md:text-2xl">
           <span class="select-none">$ </span><span ref="typedEl" class="whitespace-nowrap"></span>
