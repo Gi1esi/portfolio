@@ -1,175 +1,43 @@
 <template>
-  <section
-    class="flex flex-col lg:flex-row w-full bg-white text-gray-900 min-h-[400px] max-w-6xl mx-auto"
-  >
-    <!-- CHANGELOG -->
-    <div class="w-full lg:w-1/2 p-8 border-r border-brand-primary space-y-6">
-      <h2 class="text-3xl font-bold text-brand-primary mb-8">CHANGELOG</h2>
-      <ul class="space-y-6">
-        <li
-          v-for="(entry, index) in changelog"
-          :key="index"
-          class="cursor-pointer text-lg font-semibold hover:text-brand-primary transition"
-        >
-          <a :href="entry.link">{{ entry.version }} — {{ entry.title }}</a>
-        </li>
-      </ul>
-    </div>
+  <section class="max-w-3xl mx-auto my-12 p-10 bg-white rounded-lg shadow-md">
+    <h2 class="text-3xl font-extrabold text-brand-primary mb-10 text-center">My Stack</h2>
 
-    <!-- NODE GRAPH -->
-    <div class="w-full lg:w-1/2 p-8 relative min-h-[400px]">
-      <svg
-        :width="size"
-        :height="size"
-        viewBox="0 0 500 500"
-        class="mx-auto"
-        role="img"
-        aria-label="Skill graph"
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 place-items-center"
+    >
+      <div
+        v-for="(item, i) in allStack"
+        :key="i"
+        class="aspect-square w-[95px] md:w-[100px] flex flex-col items-center justify-center border border-gray-300 rounded-xl shadow-sm hover:shadow-md transition p-3"
       >
-        <!-- Center node -->
-        <circle
-          :cx="center"
-          :cy="center"
-          r="60"
-          :fill="brandPrimary"
-          class="cursor-pointer"
-          @mouseenter="hoverNode('System Engineer')"
-          @mouseleave="hoverNode(null)"
-          :style="centerNodeStyle"
-        />
-        <text
-          :x="center"
-          :y="center + 7"
-          text-anchor="middle"
-          fill="white"
-          font-weight="bold"
-          font-family="sans-serif"
-          font-size="18"
-          pointer-events="none"
-        >
-          System Engineer
-        </text>
-
-        <!-- Links center to outer nodes -->
-        <line
-          v-for="(node, i) in outerNodes"
-          :key="'link-center-' + i"
-          :x1="center"
-          :y1="center"
-          :x2="node.x"
-          :y2="node.y"
-          :stroke="brandPrimary"
-          stroke-width="3"
-        />
-
-        <!-- Links between adjacent outer nodes -->
-        <line
-          v-for="(node, i) in outerNodes"
-          :key="'link-adj-' + i"
-          :x1="node.x"
-          :y1="node.y"
-          :x2="outerNodes[(i + 1) % outerNodes.length].x"
-          :y2="outerNodes[(i + 1) % outerNodes.length].y"
-          :stroke="brandPrimary"
-          stroke-width="3"
-        />
-
-        <!-- Outer nodes -->
-        <g
-          v-for="(node, i) in outerNodes"
-          :key="'node-' + i"
-          class="cursor-pointer"
-          @mouseenter="hoverNode(node.id)"
-          @mouseleave="hoverNode(null)"
-          :style="nodeStyle(node.id)"
-        >
-          <circle
-            :cx="node.x"
-            :cy="node.y"
-            r="40"
-            :fill="brandPrimary"
-            stroke="white"
-            stroke-width="3"
-          />
-          <text
-            :x="node.x"
-            :y="node.y + 7"
-            text-anchor="middle"
-            fill="white"
-            font-weight="600"
-            font-family="sans-serif"
-            font-size="16"
-            pointer-events="none"
-          >
-            {{ node.id }}
-          </text>
-        </g>
-      </svg>
+        <img :src="item.logo" :alt="item.label" class="w-6 h-6 object-contain mb-2" />
+        <span class="text-xs font-medium text-center text-gray-700">{{ item.label }}</span>
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { reactive, ref, computed } from 'vue'
-
-const changelog = [
-  { version: 'v1.0', title: 'Graduated', link: '/blog/v1-0' },
-  { version: 'v1.1', title: 'First Database Project', link: '/blog/v1-1' },
-  { version: 'v1.2', title: 'Cloud Deployment', link: '/blog/v1-2' },
-  { version: 'v1.3', title: 'IoT Integration', link: '/blog/v1-3' },
-  { version: 'v2.0', title: 'Startup Founder', link: '/blog/v2-0' },
+const allStack = [
+  { label: 'Html', logo: '/assets/logos/html.png' },
+  { label: 'Javascript', logo: '/assets/logos/javascript.png' },
+  { label: 'Tailwind', logo: '/assets/logos/tailwind.png' },
+  { label: 'C++', logo: '/assets/logos/c++.png' },
+  { label: 'Docker', logo: '/assets/logos/docker.png' },
+  { label: 'Python', logo: '/assets/logos/python.png' },
+  { label: 'Vue', logo: '/assets/logos/vue.png' },
+  { label: 'Laravel', logo: '/assets/logos/laravel.png' },
+  { label: 'Postgresql', logo: '/assets/logos/postgresql.png' },
+  { label: 'Mysql', logo: '/assets/logos/iot.svg' },
+  { label: 'Scripting', logo: '/assets/logos/python.svg' },
+  { label: 'Containers', logo: '/assets/logos/docker.svg' },
+  { label: 'Monitoring', logo: '/assets/logos/prometheus.svg' },
+  { label: 'Cloud Automation', logo: '/assets/logos/terraform.svg' },
 ]
-
-const brandPrimary = '#00afb9'
-const size = 500
-const center = size / 2
-const radius = 150
-
-const outerNodeNames = ['Web Dev', 'APIs', 'AI/ML', 'Cloud', 'System Admin']
-
-const hoveredNode = ref(null)
-
-const outerNodes = reactive(
-  outerNodeNames.map((id, i) => {
-    const angle = (i / outerNodeNames.length) * 2 * Math.PI - Math.PI / 2
-    return {
-      id,
-      x: center + radius * Math.cos(angle),
-      y: center + radius * Math.sin(angle),
-    }
-  }),
-)
-
-// Style for center node - scale and glow on hover
-const centerNodeStyle = computed(() => ({
-  transform: hoveredNode.value === 'System Engineer' ? 'scale(1.1)' : 'scale(1)',
-  transition: 'transform 0.3s ease',
-  filter: hoveredNode.value === 'System Engineer' ? 'drop-shadow(0 0 6px #00afb9)' : 'none',
-}))
-
-// Style for outer nodes - scale and glow on hover
-function nodeStyle(id) {
-  return {
-    transform: hoveredNode.value === id ? 'scale(1.1)' : 'scale(1)',
-    transition: 'transform 0.3s ease',
-    filter: hoveredNode.value === id ? 'drop-shadow(0 0 6px #00afb9)' : 'none',
-  }
-}
-
-function hoverNode(id) {
-  hoveredNode.value = id
-}
 </script>
 
 <style scoped>
-.border-r {
-  border-right-color: #00afb9;
-  border-right-width: 2px;
-}
-
-@media (max-width: 1024px) {
-  .border-r {
-    border-right: none;
-  }
+.text-brand-primary {
+  color: #00afb9;
 }
 </style>

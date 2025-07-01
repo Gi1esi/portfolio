@@ -7,7 +7,7 @@ export default {
       colors: {
         brand: {
           primary: '#208888',
-          secondary: '#ff7f50',
+          secondary: '#ff644f',
         },
       },
       fontFamily: {
