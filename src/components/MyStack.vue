@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-3xl mx-auto my-12 p-10 bg-white rounded-lg shadow-md">
+  <section class="max-w-3xl mx-auto my-12 p-10 bg-white rounded-lg shadow-md dark:bg-transparent">
     <h2 class="text-3xl font-extrabold text-brand-primary mb-10 text-center">My Stack</h2>
 
     <div

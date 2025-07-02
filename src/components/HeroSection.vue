@@ -15,7 +15,7 @@
 
     <!-- Full Overlay -->
     <div
-      class="absolute inset-0 backdrop-brightness-52 bg-brand-primary/10 text-white px-4 flex items-center"
+      class="absolute inset-0 backdrop-brightness-52 dark:backdrop-brightness-50 bg-brand-primary/10 text-white px-4 flex items-center"
     >
       <!-- Content container (50% width, left aligned) -->
       <div class="w-full md:w-4/6 text-left space-y-6 px-4 md:px-12">

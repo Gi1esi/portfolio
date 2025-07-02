@@ -1,6 +1,6 @@
 <template>
   <section
-    class="max-w-6xl mx-auto px-6 py-16 mb-8 bg-white rounded-lg shadow-md flex justify-center items-center"
+    class="max-w-6xl mx-auto px-6 py-16 mb-8 bg-white rounded-lg shadow-md flex justify-center items-center dark:bg-transparent"
   >
     <div class="w-full max-w-lg">
       <h2 class="text-3xl font-extrabold text-brand-primary mb-10 text-center">Contact Me</h2>
@@ -19,7 +19,7 @@
             name="name"
             type="text"
             required
-            class="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
+            class="w-full mt-1 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary dark:bg-neutral-darkBg/50"
           />
         </div>
 
@@ -30,7 +30,7 @@
             name="email"
             type="email"
             required
-            class="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
+            class="w-full mt-1 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary dark:bg-neutral-darkBg/50"
           />
         </div>
 
@@ -41,7 +41,7 @@
             name="message"
             rows="4"
             required
-            class="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary"
+            class="w-full mt-1 p-3 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-primary dark:bg-neutral-darkBg/50"
           ></textarea>
         </div>
 
