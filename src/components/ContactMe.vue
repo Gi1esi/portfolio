@@ -1,11 +1,11 @@
 <template>
   <section
-    class="max-w-6xl mx-auto px-6 py-16 mb-8 bg-white rounded-lg shadow-md flex justify-center items-center dark:bg-transparent"
+    class="max-w-6xl mx-auto px-6 py-16 mb-8 bg-white rounded-lg shadow-md flex flex-col md:flex-row gap-12 items-center justify-center dark:bg-transparent"
   >
+    <!-- Contact Form -->
     <div class="w-full max-w-lg">
       <h2 class="text-3xl font-extrabold text-brand-primary mb-10 text-center">Contact Me</h2>
 
-      <!-- Email Form -->
       <form
         action="mailto:your-email@example.com"
         method="POST"
@@ -53,7 +53,36 @@
         </button>
       </form>
     </div>
+
+    <!-- Cards Container -->
+    <div class="w-full max-w-lg grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div
+        class="card border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition h-[250px]"
+      >
+        <h3 class="text-lg font-semibold mb-2">Software Development</h3>
+        <p>Creating apps and tools that solve real problems, learn fast, and deliver value.</p>
+      </div>
+
+      <div
+        class="card border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition h-[250px]"
+      >
+        <h3 class="text-lg font-semibold mb-2">Tech Consulting</h3>
+        <p>
+          Helping businesses choose and implement the right tech strategies to grow efficiently.
+        </p>
+      </div>
+    </div>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.card {
+  background-color: white;
+}
+
+.dark .card {
+  background-color: #1f2937; /* Tailwind slate-800 */
+  border-color: #374151; /* Tailwind slate-700 */
+  color: #d1d5db; /* Tailwind gray-300 */
+}
+</style>

@@ -6,6 +6,7 @@
       alt="Hero background"
       class="absolute inset-0 w-full h-full object-cover"
     />
+
     <!-- Mobile Hero Image -->
     <img
       src="/images/hero7.png"
