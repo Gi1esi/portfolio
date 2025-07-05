@@ -25,8 +25,10 @@
     </button>
 
     <nav class="hidden md:flex space-x-6 text-sm font-medium">
-      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Home</a>
-      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Projects</a>
+      <a href="/" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Home</a>
+      <a href="/projects" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Projects</a
+      >
       <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">About</a>
       <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Contact</a>
       <button @click="toggleDark" class="text-xl">
@@ -47,8 +49,8 @@
         v-if="menuOpen"
         class="fixed inset-0 bg-brand-primary/80 dark:bg-gray-800/80 backdrop-blur-md text-white dark:text-gray-200 flex flex-col items-center justify-center space-y-8 text-xl font-medium z-40"
       >
-        <a href="#" class="hover:underline" @click="menuOpen = false">Home</a>
-        <a href="#" class="hover:underline" @click="menuOpen = false">Projects</a>
+        <a href="/" class="hover:underline" @click="menuOpen = false">Home</a>
+        <a href="/projects" class="hover:underline" @click="menuOpen = false">Projects</a>
         <a href="#" class="hover:underline" @click="menuOpen = false">About</a>
         <a href="#" class="hover:underline" @click="menuOpen = false">Contact</a>
       </div>
