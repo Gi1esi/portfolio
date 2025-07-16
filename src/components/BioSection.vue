@@ -1,7 +1,9 @@
 <template>
-  <section class="">
+  <section class="w-[92%]">
     <nav class="p-3 rounded-md bg-brand-primary/30 my-6 w-full md:w-[80%]">
-      <ul class="flex items-center justify-center gap-8 text-sm font-medium dark:text-white">
+      <ul
+        class="flex items-center justify-center gap-5 md:gap-8 text-sm font-medium dark:text-white"
+      >
         <li
           @click="active = 'elevator-pitch'"
           :class="{
@@ -34,17 +36,19 @@
 
     <!-- Sections -->
     <div v-if="active === 'elevator-pitch'" class="mb-6">
-      <iframe
-        src="https://www.linkedin.com/embed/feed/update/urn:li:share:7315998842879918081?collapsed=1"
-        height="669"
-        width="550"
-        frameborder="0"
-        allowfullscreen=""
-        title="Embedded post"
-      ></iframe>
+      <div class="w-full max-w-[550px] mx-auto">
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:share:7315998842879918081?collapsed=1"
+          height="669"
+          class="w-full"
+          frameborder="0"
+          allowfullscreen=""
+          title="Embedded post"
+        ></iframe>
+      </div>
     </div>
 
-    <div v-if="active === 'brief-profile'" class="mb-6">
+    <div v-if="active === 'brief-profile'" class="mb-6 text-base">
       <img
         src="/images/gile.jpg"
         alt="Grace Gausi"
@@ -59,7 +63,7 @@
       </p>
     </div>
 
-    <div v-if="active === 'full-bio'" class="mb-6">
+    <div v-if="active === 'full-bio'" class="mb-6 text-base">
       <img
         src="/images/Grace_Gausi_Graduation.jpg"
         alt="Grace Gausi"

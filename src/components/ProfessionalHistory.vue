@@ -1,5 +1,5 @@
 <template>
-  <div class="card rounded p-6 bg-white dark:bg-brand-primary/15 my-6">
+  <div class="md:card rounded p-3 bg-white dark:bg-brand-primary/15 my-6">
     <h5 class="font-semibold mb-6 dark:text-brand-white py-5">Professional History</h5>
 
     <div class="space-y-6">
@@ -35,7 +35,7 @@
 
     <div class="my-10 flex items-center justify-center">
       <button class="btn bg-brand-primary rounded-3xl text-white font-semi-bold px-8 py-2">
-        View LinkedIn Profile
+        <a href="https://www.linkedin.com/in/grace-gausi-947ab4269">View LinkedIn Profile</a>
       </button>
     </div>
   </div>
