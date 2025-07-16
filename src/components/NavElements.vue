@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-brand-primary text-white py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-between items-center w-full h-16 relative z-50"
+    class="bg-brand-primary text-white py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-between items-center w-full h-16 sticky top-0 shadow z-50"
   >
     <div class="flex items-center space-x-4">
       <div class="flex space-x-2">
