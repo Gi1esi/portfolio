@@ -51,7 +51,7 @@
     >
       <div
         v-if="menuOpen"
-        class="fixed inset-0 bg-brand-primary/80 dark:bg-gray-800/80 backdrop-blur-md text-white dark:text-gray-200 flex flex-col items-center justify-center space-y-8 text-xl font-medium z-40"
+        class="fixed inset-0 bg-brand-primary/80 dark:bg-gray-800/80 backdrop-blur-md text-white dark:text-gray-200 flex flex-col items-center justify-center space-y-8 text-xl font-medium z-40 w-full"
       >
         <a href="/" class="hover:underline" @click="menuOpen = false">Home</a>
         <a href="/projects" class="hover:underline" @click="menuOpen = false">Projects</a>
