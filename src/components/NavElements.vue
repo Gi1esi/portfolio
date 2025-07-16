@@ -29,8 +29,12 @@
       <a href="/projects" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
         >Projects</a
       >
-      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">About</a>
-      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Contact</a>
+      <a href="/about" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >About</a
+      >
+      <a href="/contact" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Contact</a
+      >
       <button @click="toggleDark" class="text-xl">
         <i v-if="isDark" class="ri-moon-line"></i>
         <i v-else class="ri-sun-line"></i>
@@ -51,8 +55,8 @@
       >
         <a href="/" class="hover:underline" @click="menuOpen = false">Home</a>
         <a href="/projects" class="hover:underline" @click="menuOpen = false">Projects</a>
-        <a href="#" class="hover:underline" @click="menuOpen = false">About</a>
-        <a href="#" class="hover:underline" @click="menuOpen = false">Contact</a>
+        <a href="/about" class="hover:underline" @click="menuOpen = false">About</a>
+        <a href="/contact" class="hover:underline" @click="menuOpen = false">Contact</a>
       </div>
     </transition>
   </header>

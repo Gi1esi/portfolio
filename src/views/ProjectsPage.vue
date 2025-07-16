@@ -10,78 +10,7 @@
         grow. They all of them reflect where I’m headed and what I care about solving.
       </p>
     </div>
-
-    <!-- Decorative floating boxes -->
-    <div class="hidden md:block absolute top-0 right-20 translate-x-1/4 mt-10 mr-10 space-y-4 z-0">
-      <!-- Row 1 -->
-      <div class="flex gap-2 justify-end">
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="flex gap-2 justify-end">
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-      </div>
-
-      <!-- Row 3 (optional) -->
-      <div class="flex gap-2 justify-end">
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-      </div>
-      <!-- Row 4 (optional) -->
-      <div class="flex gap-2 justify-end">
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-      </div>
-      <!-- Row 5 (optional) -->
-      <div class="flex gap-2 justify-end">
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-        <div class="w-8 h-8 bg-brand-primary/20 rounded-lg"></div>
-      </div>
-    </div>
+    <BackgroundSquares></BackgroundSquares>
   </section>
   <div class="max-w-6xl mx-auto my-12 px-4">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -98,6 +27,7 @@
 </template>
 
 <script setup>
+import BackgroundSquares from '@/components/BackgroundSquares.vue'
 import MyStack from '@/components/MyStack.vue'
 const posts = [
   {
