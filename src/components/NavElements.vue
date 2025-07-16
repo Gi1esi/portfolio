@@ -1,6 +1,6 @@
 <template>
   <header
-    class="bg-brand-primary text-white py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-between items-center w-full h-16 sticky top-0 shadow z-50"
+    class="bg-brand-primary dark:bg-gray-900 text-white dark:text-gray-200 py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-between items-center w-full h-16 sticky top-0 shadow z-50"
   >
     <div class="flex items-center space-x-4">
       <div class="flex space-x-2">
@@ -25,10 +25,16 @@
     </button>
 
     <nav class="hidden md:flex space-x-6 text-sm font-medium">
-      <a href="#" class="hover:text-brand-secondary">Home</a>
-      <a href="#" class="hover:text-brand-secondary">Projects</a>
-      <a href="#" class="hover:text-brand-secondary">About</a>
-      <a href="#" class="hover:text-brand-secondary">Contact</a>
+      <a href="/" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Home</a>
+      <a href="/projects" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Projects</a
+      >
+      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">About</a>
+      <a href="#" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Contact</a>
+      <button @click="toggleDark" class="text-xl">
+        <i v-if="isDark" class="ri-moon-line"></i>
+        <i v-else class="ri-sun-line"></i>
+      </button>
     </nav>
 
     <transition
@@ -41,10 +47,10 @@
     >
       <div
         v-if="menuOpen"
-        class="fixed inset-0 bg-brand-primary/80 backdrop-blur-md text-white flex flex-col items-center justify-center space-y-8 text-xl font-medium z-40"
+        class="fixed inset-0 bg-brand-primary/80 dark:bg-gray-800/80 backdrop-blur-md text-white dark:text-gray-200 flex flex-col items-center justify-center space-y-8 text-xl font-medium z-40"
       >
-        <a href="#" class="hover:underline" @click="menuOpen = false">Home</a>
-        <a href="#" class="hover:underline" @click="menuOpen = false">Projects</a>
+        <a href="/" class="hover:underline" @click="menuOpen = false">Home</a>
+        <a href="/projects" class="hover:underline" @click="menuOpen = false">Projects</a>
         <a href="#" class="hover:underline" @click="menuOpen = false">About</a>
         <a href="#" class="hover:underline" @click="menuOpen = false">Contact</a>
       </div>
@@ -53,6 +59,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+
 const menuOpen = ref(false)
+const isDark = ref(false)
+
+const toggleDark = () => {
+  const html = document.documentElement
+  const darkNow = html.classList.toggle('dark')
+  localStorage.theme = darkNow ? 'dark' : 'light'
+  isDark.value = darkNow
+}
+
+onMounted(() => {
+  const html = document.documentElement
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const shouldBeDark = localStorage.theme === 'dark' || (!localStorage.theme && prefersDark)
+
+  if (shouldBeDark) html.classList.add('dark')
+  isDark.value = shouldBeDark
+})
 </script>

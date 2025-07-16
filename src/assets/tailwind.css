@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-sans text-gray-900 bg-white;
+    @apply font-sans text-gray-900 bg-brand-primary/5 dark:text-neutral-darkText dark:bg-neutral-darkBg;
   }
 
   h1,
@@ -20,10 +20,10 @@
   }
 
   .btn-primary {
-    @apply btn bg-brand-primary text-white hover:bg-brand-primary/80 p-3;
+    @apply btn bg-brand-primary text-white hover:bg-brand-primary/90 p-3  dark:bg-brand-primary/90;
   }
   .btn-secondary {
-    @apply btn bg-brand-secondary text-white font-bold p-3;
+    @apply btn bg-brand-secondary text-white font-bold p-3 hover:bg-brand-secondary/80 dark:bg-brand-secondary/90;
   }
 
   .card {

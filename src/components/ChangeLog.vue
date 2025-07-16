@@ -1,7 +1,7 @@
 <template>
   <section class="max-w-6xl mx-auto px-6 py-12">
     <div
-      class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center bg-white px-6 py-10 rounded-lg shadow-sm"
+      class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center bg-white px-6 py-10 rounded-lg shadow-sm dark:bg-neutral-darkBg"
     >
       <!-- Image Grid (Wider) -->
       <div class="grid grid-cols-2 gap-4">
