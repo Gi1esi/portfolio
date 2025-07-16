@@ -20,7 +20,10 @@
   }
 
   .btn-primary {
-    @apply btn bg-brand-primary text-white hover:bg-blue-700;
+    @apply btn bg-brand-primary text-white hover:bg-brand-primary/80 p-3;
+  }
+  .btn-secondary {
+    @apply btn bg-brand-secondary text-white font-bold p-3;
   }
 
   .card {
