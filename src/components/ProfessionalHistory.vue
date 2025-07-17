@@ -16,7 +16,7 @@
             class="w-14 h-14 rounded-full object-cover bg-gray-200"
           />
           <div>
-            <h3 class="text-base font-semibold text-gray-800 dark:text-white/80">
+            <h3 class="text-base font-semibold text-gray-800 dark:text-white/80 w-1/2">
               {{ item.org }}
             </h3>
             <p class="text-sm text-gray-600 dark:text-gray-400">{{ item.role }}</p>
@@ -45,7 +45,7 @@
 const history = [
   {
     org: 'ElevatEd',
-    role: 'Program Coordinator & Tutor Coordinator',
+    role: 'Program & Tutor Coordinator',
     logo: '/images/ElevatEd_logo.png',
     district: 'Blantyre',
     country: 'Malawi',

@@ -1,5 +1,5 @@
 <template>
-  <section class="w-[92%]">
+  <section class="md:w-[92%]">
     <nav class="p-3 rounded-md bg-brand-primary/30 my-6 w-full md:w-[80%]">
       <ul
         class="flex items-center justify-center gap-5 md:gap-8 text-sm font-medium dark:text-white"
@@ -36,7 +36,7 @@
 
     <!-- Sections -->
     <div v-if="active === 'elevator-pitch'" class="mb-6">
-      <div class="w-full max-w-[550px] mx-auto">
+      <div class="w-full max-w-[550px]">
         <iframe
           src="https://www.linkedin.com/embed/feed/update/urn:li:share:7315998842879918081?collapsed=1"
           height="669"

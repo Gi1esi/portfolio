@@ -1,10 +1,21 @@
 <template>
-  <section class="relative h-screen w-full">
+  <section class="relative h-screen w-full dark:bg-neutral-darkBg">
     <!-- Hero Image -->
-    <img
-      src="/images/hero6b.png"
+    <!-- <img
+      src="/images/background.png"
       alt="Hero background"
-      class="absolute inset-0 w-full h-full object-cover"
+      class="hidden dark:block h-full w-full object-cover"
+    /> -->
+    <!-- <background-squares></background-squares> -->
+    <img
+      src="/images/hero20.png"
+      alt="Hero background"
+      class="hidden md:block dark:hidden absolute right-40 top-0 h-full w-1/3 object-cover"
+    />
+    <img
+      src="/images/hero20_dark.png"
+      alt="Hero background dark"
+      class="hidden dark:block absolute right-40 top-0 h-full w-1/3 object-cover"
     />
 
     <!-- Mobile Hero Image -->
@@ -15,13 +26,13 @@
     />
 
     <!-- Full Overlay -->
-    <div
-      class="absolute inset-0 backdrop-brightness-52 dark:backdrop-brightness-50 bg-brand-primary/10 text-white px-4 flex items-center"
-    >
+    <div class="absolute inset-0 text-white px-4 flex items-center">
       <!-- Content container (50% width, left aligned) -->
       <div class="w-full md:w-4/6 text-left space-y-6 px-4 md:px-12">
-        <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
-        <p class="text-lg md:text-xl">Systems Engineer | Builder | Curious Mind</p>
+        <div class="text-brand-primary/60 dark:text-white">
+          <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
+          <p class="text-lg md:text-xl">Systems Engineer | Builder | Curious Mind</p>
+        </div>
         <!-- Typing Effect -->
         <div class="font-mono text-brand-secondary text-xl md:text-2xl">
           <span class="select-none">$ </span><span ref="typedEl" class="whitespace-nowrap"></span>
@@ -40,6 +51,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import Typed from 'typed.js'
+import BackgroundSquares from './BackgroundSquares.vue'
 
 const typedEl = ref(null)
 
