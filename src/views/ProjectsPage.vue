@@ -1,17 +1,18 @@
 <template>
-  <section></section>
-
   <section class="relative py-20 px-5 max-w-6xl mx-auto">
     <!-- Text content on the left -->
-    <div class="relative z-10 max-w-lg">
-      <h2 class="text-3xl font-bold text-brand-primary mb-8">My Portfolio</h2>
-      <p class="text-gray-600 dark:text-gray-300">
-        This space is a glimpse into the things I’m building, experimenting with, or refining as I
-        grow. They all of them reflect where I’m headed and what I care about solving.
-      </p>
+    <div class="w-full flex justify-between items-center">
+      <div class="relative z-10 max-w-lg">
+        <h2 class="text-3xl font-bold text-brand-primary mb-8">My Portfolio</h2>
+        <p class="text-gray-600 dark:text-gray-300">
+          This space is a glimpse into the things I’m building, experimenting with, or refining as I
+          grow. They all of them reflect where I’m headed and what I care about solving.
+        </p>
+      </div>
+      <!-- <img src="/images/hero10.png" alt="" class="w-[20%] h-[20%]" /> -->
     </div>
   </section>
-  <div class="max-w-6xl mx-auto my-12 px-4">
+  <div class="max-w-6xl mx-auto my-12 px-4 hero">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <div v-for="(post, index) in posts" :key="index" class="flex flex-col">
         <div class="aspect-[3/2] bg-gray-200 rounded-md overflow-hidden">
