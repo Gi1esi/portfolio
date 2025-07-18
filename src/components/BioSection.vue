@@ -71,7 +71,7 @@
       />
       <p class="my-3">
         Grace Gausi is a systems engineer from Malawi who builds technology with purpose. Her work
-        spans IT infrastructure, secure network systems, and software development—with a focus on
+        spans IT infrastructure, secure network systems, and software development, with a focus on
         making advanced tools usable and meaningful in resource-constrained environments.
       </p>
       <p class="my-3">
@@ -91,7 +91,7 @@
       <p class="my-3">
         Her interests lie at the intersection of ethical AI, digital sovereignty, and infrastructure
         that empowers rather than excludes. Both in her professional and personal work, she’s
-        committed to shaping tech that fits real people and real contexts—especially in African
+        committed to shaping tech that fits real people and real contexts, especially in African
         settings too often left out of the design process.
       </p>
     </div>

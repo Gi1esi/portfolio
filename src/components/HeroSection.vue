@@ -1,28 +1,12 @@
 <template>
   <section class="relative h-screen w-full dark:bg-neutral-darkBg">
     <!-- Hero Image -->
-    <img src="/images/stars.png" alt="Hero background" class="dark:block" />
     <!-- <background-squares></background-squares> -->
-    <img
-      src="/images/hero20.png"
-      alt="Hero background"
-      class="hidden md:block dark:hidden absolute right-40 top-0 h-full w-1/3 object-cover"
-    />
-    <img
-      src="/images/hero20_dark.png"
-      alt="Hero background dark"
-      class="hidden dark:block absolute right-40 top-0 h-full w-1/3 object-cover"
-    />
-
-    <!-- Mobile Hero Image -->
-    <img
-      src="/images/hero7.png"
-      alt="Hero background mobile"
-      class="block md:hidden absolute inset-0 w-full h-full object-cover"
-    />
 
     <!-- Full Overlay -->
-    <div class="absolute inset-0 text-white px-4 flex items-center">
+    <div
+      class="text-white flex items-center justify-around md:justify-between flex-wrap-reverse md:max-w-[95%]"
+    >
       <!-- Content container (50% width, left aligned) -->
       <div class="w-full md:w-4/6 text-left space-y-6 px-4 md:px-12">
         <div class="text-brand-primary/60 dark:text-white">
@@ -40,6 +24,16 @@
           <button class="btn-secondary">Follow my Journey</button>
         </div>
       </div>
+      <img
+        src="/images/hero20.png"
+        alt="Hero background"
+        class="md:block dark:hidden h-[80%] w-[80%] md:w-1/3 object-cover"
+      />
+      <img
+        src="/images/hero20_dark.png"
+        alt="Hero background dark"
+        class="hidden dark:block h-full[80%] w-[80%] md:w-1/3 object-cover"
+      />
     </div>
   </section>
 </template>
@@ -63,3 +57,8 @@ onMounted(() => {
   })
 })
 </script>
+<style scoped>
+section {
+  background-image: url(/images/stars.png);
+}
+</style>
