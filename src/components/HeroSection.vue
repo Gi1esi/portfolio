@@ -1,11 +1,7 @@
 <template>
   <section class="relative h-screen w-full dark:bg-neutral-darkBg">
     <!-- Hero Image -->
-    <!-- <img
-      src="/images/background.png"
-      alt="Hero background"
-      class="hidden dark:block h-full w-full object-cover"
-    /> -->
+    <img src="/images/stars.png" alt="Hero background" class="dark:block" />
     <!-- <background-squares></background-squares> -->
     <img
       src="/images/hero20.png"

@@ -33,7 +33,7 @@
           >
         </p>
         <a
-          href="/experience"
+          href="/about"
           class="inline-block px-5 py-2 btn btn-primary text-white rounded-md font-medium hover:bg-opacity-90 transition"
         >
           View My Experience
@@ -48,12 +48,12 @@ const jobs = [
   {
     org: 'Malawi Research and Education Network (MAREN)',
     image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQFyYBXXkUHAxA/feedshare-shrink_1280/B4DZZneFy_HwAk-/0/1745492664761?e=1753920000&v=beta&t=hIpYDrZ-y_rEcd9YIpccSpTH1facSyxjBlsVe8JTOC4',
+      'https://media.licdn.com/dms/image/v2/D4D22AQEE47Ld6m8yOw/feedshare-shrink_1280/B4DZake0w9GsAo-/0/1746516269326?e=1753920000&v=beta&t=ct74gUP5Qk4Zu9flEItuDfC02eldo6pz2pvnkpNdQC8',
   },
   {
-    org: 'Shenovates',
+    org: 'ElevatEd',
     image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQEE47Ld6m8yOw/feedshare-shrink_1280/B4DZake0w9GsAo-/0/1746516269326?e=1753920000&v=beta&t=ct74gUP5Qk4Zu9flEItuDfC02eldo6pz2pvnkpNdQC8',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFyYBXXkUHAxA/feedshare-shrink_1280/B4DZZneFy_HwAk-/0/1745492664761?e=1753920000&v=beta&t=hIpYDrZ-y_rEcd9YIpccSpTH1facSyxjBlsVe8JTOC4',
   },
 ]
 </script>

@@ -1,6 +1,6 @@
 <template>
   <section class="md:w-[92%]">
-    <nav class="p-3 rounded-md bg-brand-primary/30 my-6 w-full md:w-[80%]">
+    <nav class="p-3 rounded-md bg-brand-primary/30 my-6 w-full md:w-[90%]">
       <ul
         class="flex items-center justify-center gap-5 md:gap-8 text-sm font-medium dark:text-white"
       >
