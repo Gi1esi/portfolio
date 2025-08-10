@@ -13,7 +13,9 @@
         class="aspect-square w-[95px] md:w-[100px] flex flex-col items-center justify-center border border-gray-300 rounded-xl shadow-sm hover:shadow-md transition p-3"
       >
         <img :src="item.logo" :alt="item.label" class="w-6 h-6 object-contain mb-2" />
-        <span class="text-xs font-medium text-center text-gray-700">{{ item.label }}</span>
+        <span class="text-xs font-medium text-center text-gray-700 dark:text-gray-400">{{
+          item.label
+        }}</span>
       </div>
     </div>
   </section>

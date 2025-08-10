@@ -15,7 +15,9 @@
             </div>
 
             <!-- Navigation Links -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-10 text-sm text-gray-700">
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-10 text-sm text-gray-700 dark:text-gray-400"
+            >
               <div>
                 <ul class="space-y-2">
                   <li><a href="/" class="hover:text-brand-primary">Home</a></li>
@@ -55,7 +57,7 @@
 
             <!-- Socials -->
             <div class="text-center lg:text-right space-y-4">
-              <p class="text-sm mt-4 text-gray-600">Connect with me</p>
+              <p class="text-sm mt-4 text-gray-600 dark:text-gray-400">Connect with me</p>
               <div class="flex justify-center lg:justify-end gap-4 text-xl text-brand-primary">
                 <a href="https://github.com/your-github" target="_blank"
                   ><i class="ri-github-fill"></i

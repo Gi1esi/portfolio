@@ -1,7 +1,7 @@
 <template>
-  <section class="relative bottom-20 md:static max-w-6xl mx-auto px-6 py-12">
+  <section class="max-w-6xl mx-auto px-6 py-12 md:py-1">
     <div
-      class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center bg-white px-6 py-10 rounded-lg shadow-sm dark:bg-neutral-darkBg"
+      class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-10 items-center bg-white px-6 py-7 rounded-lg shadow-sm dark:bg-neutral-darkBg"
     >
       <!-- Image Grid (Wider) -->
       <div class="grid grid-cols-2 gap-4">
@@ -26,7 +26,7 @@
       <!-- Experience Text -->
       <div class="space-y-5">
         <h2 class="text-3xl font-bold text-brand-primary">Experience</h2>
-        <p class="text-gray-700 text-base leading-relaxed mb-3">
+        <p class="text-gray-700 dark:text-gray-500 text-base leading-relaxed mb-3">
           I work at the intersection of systems, infrastructure, and impact.
           <span class="text-brand-secondary font-semibold"
             >Solving problems at scale is what I enjoy most.</span
@@ -48,12 +48,12 @@ const jobs = [
   {
     org: 'Malawi Research and Education Network (MAREN)',
     image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQEE47Ld6m8yOw/feedshare-shrink_1280/B4DZake0w9GsAo-/0/1746516269326?e=1753920000&v=beta&t=ct74gUP5Qk4Zu9flEItuDfC02eldo6pz2pvnkpNdQC8',
+      'https://media.licdn.com/dms/image/v2/D4D22AQEE47Ld6m8yOw/feedshare-shrink_1280/B4DZake0w9GsAo-/0/1746516269326?e=1756944000&v=beta&t=TydwxckocY1vAaFREnt4k7y0pCrNKANnMDLj69qv-o4',
   },
   {
     org: 'ElevatEd',
     image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQFyYBXXkUHAxA/feedshare-shrink_1280/B4DZZneFy_HwAk-/0/1745492664761?e=1753920000&v=beta&t=hIpYDrZ-y_rEcd9YIpccSpTH1facSyxjBlsVe8JTOC4',
+      'https://media.licdn.com/dms/image/v2/D4D22AQFyYBXXkUHAxA/feedshare-shrink_800/B4DZZneFy_HwAg-/0/1745492664761?e=1756944000&v=beta&t=7o6tOviNDxnTrZsImxDNPkZwuIyAo1DwD6-1jQiJpVM',
   },
 ]
 </script>

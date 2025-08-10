@@ -1,14 +1,14 @@
 <template>
-  <section class="relative h-screen w-full dark:bg-neutral-darkBg">
+  <section class="relative md:h-screen md:mb-0 mb-14 max-w-6xl px-6 dark:bg-neutral-darkBg">
     <!-- Hero Image -->
     <!-- <background-squares></background-squares> -->
 
     <!-- Full Overlay -->
     <div
-      class="text-white flex items-center justify-around md:justify-between flex-wrap-reverse md:max-w-[95%]"
+      class="text-white flex items-center justify-around md:justify-between flex-wrap-reverse md:max-w-[100%]"
     >
       <!-- Content container (50% width, left aligned) -->
-      <div class="w-full md:w-4/6 text-left space-y-6 px-4 md:px-12">
+      <div class="text-left space-y-6 md:px-14">
         <div class="text-brand-primary/60 dark:text-white">
           <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
           <p class="text-lg md:text-xl">Systems Engineer | Builder | Curious Mind</p>
@@ -19,9 +19,9 @@
         </div>
 
         <!-- Buttons -->
-        <div class="flex flex-wrap gap-4 pt-4">
-          <button class="btn-primary">View Projects</button>
-          <button class="btn-secondary">Follow my Journey</button>
+        <div class="flex flex-wrap gap-3 pt-4">
+          <button class="btn-primary text-sm">View Projects</button>
+          <button class="btn-secondary text-sm">Follow my Journey</button>
         </div>
       </div>
       <img
@@ -41,7 +41,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import Typed from 'typed.js'
-import BackgroundSquares from './BackgroundSquares.vue'
 
 const typedEl = ref(null)
 
