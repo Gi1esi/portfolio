@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative py-20 px-5 max-w-6xl mx-auto flex justify-between items-center"
+    class="relative py-20 px-5 my-12 max-w-6xl mx-auto flex justify-between items-center"
     style="min-height: 250px"
   >
     <div class="w-full flex justify-between items-center">
@@ -43,7 +43,37 @@ const svgRef = ref(null)
 const width = 400
 const height = 170
 const nodeCount = 30
-const posts = []
+const posts = [
+  {
+    title: 'Project Alpha',
+    thumbnail:
+      'https://images.unsplash.com/photo-1716637644831-e046c73be197?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    title: 'First Product',
+    thumbnail:
+      'https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    title: 'Third Project',
+    thumbnail:
+      'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    title: 'Project Alpha',
+    thumbnail:
+      'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    title: 'First Product',
+    thumbnail: 'https://cdn.pixabay.com/photo/2023/09/28/07/25/technology-8280863_1280.jpg',
+  },
+  {
+    title: 'Third Project',
+    thumbnail:
+      'https://images.unsplash.com/photo-1621856751576-1ea064353795?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+]
 
 onMounted(() => {
   const svg = svgRef.value
