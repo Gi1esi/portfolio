@@ -23,7 +23,9 @@
         <div class="aspect-[4/3] bg-gray-200 rounded-md overflow-hidden">
           <img :src="post.thumbnail" :alt="post.title" class="w-full h-full object-cover" />
         </div>
-        <h3 class="mt-3 text-base font-medium text-gray-800">{{ post.title }}</h3>
+        <h3 class="mt-3 text-base font-medium text-gray-800 dark:text-gray-500">
+          {{ post.title }}
+        </h3>
       </div>
     </div>
   </section>
