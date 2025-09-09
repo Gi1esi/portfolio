@@ -18,7 +18,9 @@
           <div
             class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <span class="text-white font-semibold text-lg text-center px-2">{{ job.org }}</span>
+            <span class="text-white font-semibold text-base md:text-lg text-center px-2">{{
+              job.org
+            }}</span>
           </div>
         </div>
       </div>

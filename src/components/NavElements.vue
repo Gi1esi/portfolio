@@ -2,12 +2,12 @@
   <header
     class="bg-brand-primary dark:bg-gray-900 text-white dark:text-gray-200 py-4 px-4 sm:px-6 md:px-12 lg:px-20 flex justify-between items-center w-full h-16 sticky top-0 shadow z-50"
   >
-    <div class="flex items-center space-x-4">
-      <div class="flex space-x-2">
+    <div class="flex items-center space-x-4 px-8">
+      <!-- <div class="space-x-2 hidden md:block">
         <span class="w-3 h-3 bg-red-500 rounded-full"></span>
         <span class="w-3 h-3 bg-yellow-400 rounded-full"></span>
         <span class="w-3 h-3 bg-green-500 rounded-full"></span>
-      </div>
+      </div> -->
       <div class="font-semibold text-base md:text-lg">Grace.Gausi</div>
     </div>
 
@@ -83,7 +83,7 @@
 import { ref, onMounted } from 'vue'
 
 const menuOpen = ref(false)
-const isDark = ref(false)
+const isDark = ref(true)
 
 const toggleDark = () => {
   const html = document.documentElement

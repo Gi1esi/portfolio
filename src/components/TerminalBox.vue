@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full md:w-[400px] lg:w-[500px] rounded-xl p-6 font-mono h-[200px] shadow-lg transition-colors bg-neutral-bg text-neutral-text dark:bg-brand-primary/10 dark:text-neutral-darkText overflow-y-scroll scrollbar-none"
+    class="hidden md:block w-[85%] md:w-[400px] lg:w-[500px] rounded-xl p-6 font-mono h-[200px] shadow-lg transition-colors bg-neutral-bg text-neutral-text dark:bg-brand-primary/10 dark:text-neutral-darkText overflow-y-scroll scrollbar-none"
   >
     <!-- Output lines -->
     <div v-for="(line, index) in output" :key="index" class="whitespace-pre-wrap">
