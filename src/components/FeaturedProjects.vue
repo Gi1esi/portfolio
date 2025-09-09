@@ -1,14 +1,14 @@
 <template>
   <section class="max-w-6xl mx-auto my-12 px-4">
     <div class="flex justify-between items-center py-3">
-      <h2 class="text-3xl font-bold text-brand-primary mb-8">Featured Projects</h2>
+      <h2 class="text-lg md:text-2xl font-bold text-brand-primary mb-8">Featured Projects</h2>
       <a
         href="https://github.com/your-github-username"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-5 py-2 bg-brand-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition"
+        class="inline-flex items-center gap-2 px-4 md:px-5 py-2 text-sm md:text-base bg-brand-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition"
       >
-        Explore My Code
+        Github
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path
             fill-rule="evenodd"
@@ -23,9 +23,21 @@
         <div class="aspect-[4/3] bg-gray-200 rounded-md overflow-hidden">
           <img :src="post.thumbnail" :alt="post.title" class="w-full h-full object-cover" />
         </div>
-        <h3 class="mt-3 text-base font-medium text-gray-800 dark:text-gray-500">
-          {{ post.title }}
-        </h3>
+        <div class="p-4 flex justify-between items-center">
+          <h3 class="mt-3 text-base font-medium text-gray-800 dark:text-gray-500">
+            {{ post.title }}
+          </h3>
+          <!-- GitHub link -->
+          <div class="mt-auto pt-4">
+            <a
+              :href="post.github"
+              target="_blank"
+              class="inline-block text-sm text-brand-secondary hover:underline"
+            >
+              View →
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -34,19 +46,19 @@
 <script setup>
 const posts = [
   {
-    title: 'Project Alpha',
-    thumbnail:
-      'https://images.unsplash.com/photo-1716637644831-e046c73be197?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
-  {
-    title: 'First Product',
+    title: 'Transactly',
     thumbnail:
       'https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
-    title: 'Third Project',
+    title: 'NzeruBot',
     thumbnail:
       'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    title: 'News-Bot',
+    thumbnail:
+      'https://images.unsplash.com/photo-1621856751576-1ea064353795?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ]
 </script>

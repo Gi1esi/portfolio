@@ -3,8 +3,8 @@
     <div>
       <div class="max-w-6xl mx-auto px-0">
         <!-- Card-like Footer Container -->
-        <div class="bg-brand-primary/5 shadow-sm rounded-lg overflow-hidden">
-          <div class="py-10 px-10 flex flex-col lg:flex-row justify-between items-start gap-12">
+        <div class="bg-brand-primary/10 shadow-lg dark:shadow-sm rounded-lg overflow-hidden">
+          <div class="py-10 px-10 flex flex-col md:flex-row justify-between items-start gap-12">
             <!-- Profile -->
             <div class="flex flex-col items-center text-center lg:text-left">
               <img

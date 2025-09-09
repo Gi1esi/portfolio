@@ -9,49 +9,30 @@
         </p>
       </div>
 
-      <!-- Styled FAQ Grid -->
+      <!-- 3 Cards -->
       <div class="max-w-5xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- Column 1 -->
-
           <div class="card rounded p-6 dark:bg-brand-primary/5">
-            <!-- <h2 class="text-xl font-extrabold text-brand-primary mb-12 text-center">
-              In case you are wondering
-            </h2> -->
-            <h3 class="font-semi-bold text-brand-primary/90 text-center">Software Development</h3>
+            <h3 class="font-semibold text-brand-primary/90 text-center">Software Development</h3>
             <p class="text-base pt-3 text-gray-600 dark:text-white/50">
               If you have something in mind or just need help figuring it out, I’m open to working
               on projects.
             </p>
           </div>
 
-          <!-- column 2 -->
-          <div class="space-y-4 card rounded p-6 dark:bg-brand-primary/5">
-            <!-- <FaqItem question="Can I message you just to talk about an idea?">
-              Absolutely. I love hearing early-stage or even half-baked ideas.
-            </FaqItem>
-            <FaqItem question="Do you ghost people?">
-              Nope. If I can't help, I’ll tell you straight.
-            </FaqItem> -->
-            <h3 class="font-semi-bold text-brand-primary/90 text-center">Tech Consulting</h3>
+          <div class="card rounded p-6 dark:bg-brand-primary/5">
+            <h3 class="font-semibold text-brand-primary/90 text-center">Tech Consulting</h3>
             <p class="text-base text-gray-600 dark:text-white/50">
               If you’re unsure or need help setting things up the right way, I can walk you through
-              it
+              it.
             </p>
           </div>
 
-          <!-- Column 3 -->
-          <div class="space-y-4 card rounded p-6 dark:bg-brand-primary/5">
-            <!-- <FaqItem question="Will you judge my typos?">
-              Only if they're in production code. Otherwise, bring the chaos.
-            </FaqItem>
-            <FaqItem question="Are you open to freelance work?">
-              Yes. I’m currently open to short-term and long-term freelance projects.
-            </FaqItem> -->
-            <h3 class="font-semi-bold text-brand-primary/90 text-center">Mentorship</h3>
+          <div class="card rounded p-6 dark:bg-brand-primary/5">
+            <h3 class="font-semibold text-brand-primary/90 text-center">Mentorship</h3>
             <p class="text-base text-gray-600 dark:text-white/50">
               I know what it’s like to learn this stuff from scratch. I’m happy to help if you need
-              someone to ask questions
+              someone to ask questions.
             </p>
           </div>
         </div>
@@ -61,12 +42,14 @@
       <div class="max-w-2xl mx-auto p-10 card dark:bg-transparent">
         <h2 class="text-2xl font-extrabold text-brand-primary mb-8 text-center">Send a Message</h2>
 
-        <form
-          action="mailto:your-email@example.com"
-          method="POST"
-          enctype="text/plain"
-          class="space-y-6"
-        >
+        <form ref="form" @submit.prevent="sendEmail" class="space-y-6">
+          <!-- Feedback Messages -->
+          <p v-if="status === 'success'" class="mt-4 text-brand-primary font-medium text-center">
+            Your message has been sent successfully!
+          </p>
+          <p v-if="status === 'error'" class="mt-4 text-brand-secondary font-medium text-center">
+            Something went wrong: {{ error.text }}
+          </p>
           <div>
             <label for="name" class="block text-sm font-semibold mb-1">Name</label>
             <input
@@ -102,9 +85,11 @@
 
           <button
             type="submit"
+            value="Send"
             class="w-full bg-brand-primary text-white font-semibold py-3 rounded-xl hover:bg-brand-primary/90 transition"
           >
-            Send Mail
+            <span v-if="status !== 'loading'">Send Mail</span>
+            <span v-else>Sending...</span>
           </button>
         </form>
       </div>
@@ -115,6 +100,7 @@
       </div>
     </div>
   </section>
+
   <!-- Vertical Social Icons Sidebar -->
   <div
     class="md:fixed md:top-1/3 md:right-12 md:z-50 flex flex-row justify-center md:justify-start md:flex-col md:space-y-4 md:space-x-0 space-x-4 text-2xl text-brand-primary dark:text-white"
@@ -162,4 +148,25 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+import emailjs from '@emailjs/browser'
+
+const form = ref(null)
+const status = ref(null) // null | 'loading' | 'success' | 'error'
+
+const sendEmail = () => {
+  status.value = 'loading'
+  emailjs
+    .sendForm('contact_service', 'contact_form', form.value, {
+      publicKey: 'TCVH6v7RvAZz-66gR',
+    })
+    .then(() => {
+      status.value = 'success'
+      form.value.reset()
+    })
+    .catch((error) => {
+      status.value = 'error'
+    })
+}
+</script>

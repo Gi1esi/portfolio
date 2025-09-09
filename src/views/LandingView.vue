@@ -3,8 +3,8 @@
   <change-log></change-log>
   <MyStack></MyStack>
   <featured-projects></featured-projects>
+  <div class="h-20"></div>
   <MyBlog></MyBlog>
-  <contact-me></contact-me>
 </template>
 
 <script setup>
@@ -13,5 +13,4 @@ import MyBlog from '@/components/MyBlog.vue'
 import MyStack from '@/components/MyStack.vue'
 import FeaturedProjects from '@/components/FeaturedProjects.vue'
 import ChangeLog from '@/components/ChangeLog.vue'
-import ContactMe from '@/components/ContactMe.vue'
 </script>

@@ -52,14 +52,14 @@
       <img
         src="/images/gile.jpg"
         alt="Grace Gausi"
-        class="rounded-xl shadow-lg w-full object-cover aspect-square mb-5"
+        class="rounded-xl shadow-lg w-[90%] object-cover aspect-square mb-5"
       />
       <p>
-        Grace Gausi is a systems engineer from Malawi with a passion for building purposeful,
-        context-aware technology. With a background in IT infrastructure, AI for social good, and
-        academic excellence, she designs and maintains systems that bridge real-world gaps, from
-        server rooms to rural farms. She’s especially interested in ethical tech, African digital
-        sovereignty, and making advanced tools accessible in low-resource settings.
+        Grace Gausi is an early-career systems engineer from Malawi with a passion for building
+        purposeful, context-aware technology. With a background in IT infrastructure, AI for social
+        good, and academic excellence, she designs and maintains systems that bridge real-world
+        gaps. She’s especially interested in ethical tech, African digital sovereignty, and making
+        advanced tools accessible in low-resource settings.
       </p>
     </div>
 
@@ -67,12 +67,13 @@
       <img
         src="/images/Grace_Gausi_Graduation.jpg"
         alt="Grace Gausi"
-        class="rounded-xl shadow-lg w-full object-cover aspect-square mb-5"
+        class="rounded-xl shadow-lg w-[90%] object-cover aspect-square mb-5"
       />
       <p class="my-3">
-        Grace Gausi is a systems engineer from Malawi who builds technology with purpose. Her work
-        spans IT infrastructure, secure network systems, and software development, with a focus on
-        making advanced tools usable and meaningful in resource-constrained environments.
+        Grace Gausi is an early-career systems engineer from Malawi who builds technology with
+        purpose. Her work spans IT infrastructure, secure network systems, and software development,
+        with a focus on making advanced tools usable and meaningful in resource-constrained
+        environments.
       </p>
       <p class="my-3">
         She currently contributes to national research infrastructure through her role at
@@ -97,7 +98,9 @@
     </div>
 
     <!-- Static Contact Section -->
-    <div class="text-brand-secondary font-bold mt-10 text-xl"><a href="#">Get in Touch..</a></div>
+    <div class="text-brand-secondary font-bold mt-10 text-xl">
+      <a href="/contact">Get in Touch..</a>
+    </div>
   </section>
 </template>
 
