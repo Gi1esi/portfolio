@@ -1,5 +1,7 @@
 <template>
-  <section class="relative md:h-screen md:mb-0 mb-14 max-w-6xl px-6 dark:bg-neutral-darkBg">
+  <section
+    class="relative md:max-h-screen md:mb-0 mb-12 py-6 max-w-6xl px-6 dark:bg-neutral-darkBg"
+  >
     <!-- Hero Image -->
     <!-- <background-squares></background-squares> -->
 
@@ -8,10 +10,10 @@
       class="text-white flex items-center justify-around md:justify-between flex-wrap-reverse md:max-w-[100%]"
     >
       <!-- Content container (50% width, left aligned) -->
-      <div class="text-left space-y-6 md:px-14">
+      <div class="text-left ml-8 space-y-6 md:px-14">
         <div class="text-brand-primary/60 dark:text-white">
           <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
-          <p class="text-lg md:text-xl">Systems Engineer | Builder | Curious Mind</p>
+          <p class="text-lg md:text-xl">Systems Engineer | Innovator</p>
         </div>
         <!-- Typing Effect -->
         <div class="font-mono text-brand-secondary text-xl md:text-2xl">
@@ -20,17 +22,19 @@
 
         <!-- Buttons -->
         <div class="flex flex-wrap gap-3 pt-4">
-          <button class="btn-primary text-sm">View Projects</button>
-          <button class="btn-secondary text-sm">Follow my Journey</button>
+          <button class="btn-primary text-sm"><a href="/projects">View Projects</a></button>
+          <button class="btn-secondary text-sm">
+            <a href="https://www.linkedin.com/in/grace-gausi-947ab4269/">Follow my Journey</a>
+          </button>
         </div>
       </div>
       <img
-        src="/images/hero20.png"
+        src="/images/Grace-hero2.png "
         alt="Hero background"
-        class="md:block dark:hidden h-[80%] w-[80%] md:w-1/3 object-cover"
+        class="md:block dark:hidden h-[100%] w-[100%] md:w-1/3 object-cover"
       />
       <img
-        src="/images/hero20_dark.png"
+        src="/images/Grace-hero-dark.png"
         alt="Hero background dark"
         class="hidden dark:block h-full[80%] w-[80%] md:w-1/3 object-cover"
       />
@@ -59,5 +63,8 @@ onMounted(() => {
 <style scoped>
 section {
   background-image: url(/images/stars.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain; /* or auto */
 }
 </style>

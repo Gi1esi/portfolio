@@ -27,9 +27,9 @@
       <div class="space-y-5">
         <h2 class="text-3xl font-bold text-brand-primary">Experience</h2>
         <p class="text-gray-700 dark:text-gray-500 text-base leading-relaxed mb-3">
-          I work at the intersection of systems, infrastructure, and impact.
+          I spend my days convincing tech to do what humans actually want.
           <span class="text-brand-secondary font-semibold"
-            >Solving problems at scale is what I enjoy most.</span
+            >P.S: It’s fun and sometimes harder than it sounds.</span
           >
         </p>
         <a
@@ -47,13 +47,11 @@
 const jobs = [
   {
     org: 'Malawi Research and Education Network (MAREN)',
-    image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQEE47Ld6m8yOw/feedshare-shrink_1280/B4DZake0w9GsAo-/0/1746516269326?e=1756944000&v=beta&t=TydwxckocY1vAaFREnt4k7y0pCrNKANnMDLj69qv-o4',
+    image: '/images/grace5.jpg',
   },
   {
     org: 'ElevatEd',
-    image:
-      'https://media.licdn.com/dms/image/v2/D4D22AQFyYBXXkUHAxA/feedshare-shrink_800/B4DZZneFy_HwAg-/0/1745492664761?e=1756944000&v=beta&t=7o6tOviNDxnTrZsImxDNPkZwuIyAo1DwD6-1jQiJpVM',
+    image: '/images/grace2.jpg',
   },
 ]
 </script>
