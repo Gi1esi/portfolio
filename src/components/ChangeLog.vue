@@ -32,12 +32,12 @@
             >P.S: It’s fun and sometimes harder than it sounds.</span
           >
         </p>
-        <a
-          href="/about"
+        <router-link
+          to="/about"
           class="inline-block px-5 py-2 btn btn-primary text-white rounded-md font-medium hover:bg-opacity-90 transition"
         >
           View My Experience
-        </a>
+        </router-link>
       </div>
     </div>
   </section>

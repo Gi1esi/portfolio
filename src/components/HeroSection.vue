@@ -22,7 +22,9 @@
 
         <!-- Buttons -->
         <div class="flex flex-wrap gap-3 pt-4">
-          <button class="btn-primary text-sm"><a href="/projects">View Projects</a></button>
+          <button class="btn-primary text-sm">
+            <router-link to="/projects">View Projects</router-link>
+          </button>
           <button class="btn-secondary text-sm">
             <a href="https://www.linkedin.com/in/grace-gausi-947ab4269/">Follow my Journey</a>
           </button>

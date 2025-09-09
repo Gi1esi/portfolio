@@ -25,16 +25,23 @@
     </button>
 
     <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
-      <a href="/" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50">Home</a>
-      <a href="/projects" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
-        >Projects</a
+      <router-link to="/" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Home</router-link
       >
-      <a href="/about" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
-        >About</a
+      <router-link
+        to="/projects"
+        class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Projects</router-link
       >
-      <a href="/contact" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
-        >Contact</a
+      <router-link to="/about" class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >About</router-link
       >
+      <router-link
+        to="/contact"
+        class="hover:text-brand-secondary dark:hover:text-brand-secondary/50"
+        >Contact</router-link
+      >
+
       <button @click="toggleDark" class="text-xl">
         <i v-if="isDark" class="ri-moon-line"></i>
         <i v-else class="ri-sun-line"></i>
@@ -57,10 +64,16 @@
           <i v-if="isDark" class="ri-moon-line"></i>
           <i v-else class="ri-sun-line"></i>
         </button>
-        <a href="/" class="hover:underline" @click="menuOpen = false">Home</a>
-        <a href="/projects" class="hover:underline" @click="menuOpen = false">Projects</a>
-        <a href="/about" class="hover:underline" @click="menuOpen = false">About</a>
-        <a href="/contact" class="hover:underline" @click="menuOpen = false">Contact</a>
+        <router-link to="/" class="hover:underline" @click="menuOpen = false">Home</router-link>
+        <router-link to="/projects" class="hover:underline" @click="menuOpen = false"
+          >Projects</router-link
+        >
+        <router-link to="/about" class="hover:underline" @click="menuOpen = false"
+          >About</router-link
+        >
+        <router-link to="/contact" class="hover:underline" @click="menuOpen = false"
+          >Contact</router-link
+        >
       </div>
     </transition>
   </header>
