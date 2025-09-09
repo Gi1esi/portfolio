@@ -106,7 +106,7 @@
     class="md:fixed md:top-1/3 md:right-12 md:z-50 flex flex-row justify-center md:justify-start md:flex-col md:space-y-4 md:space-x-0 space-x-4 text-2xl text-brand-primary dark:text-white"
   >
     <a
-      href="https://www.linkedin.com/in/yourusername"
+      href="https://www.linkedin.com/in/grace-gausi-947ab4269?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BydG%2FSumcSIaG%2BwS8wSqyqg%3D%3D"
       target="_blank"
       rel="noopener"
       class="hover:text-brand-secondary"
@@ -114,35 +114,25 @@
       <i class="ri-linkedin-box-fill"></i>
     </a>
     <a
-      href="https://github.com/yourusername"
+      href="https://github.com/Gi1esi"
       target="_blank"
       rel="noopener"
       class="hover:text-brand-secondary"
     >
       <i class="ri-github-fill"></i>
     </a>
-    <a
-      href="https://www.datacamp.com/profile/yourusername"
-      target="_blank"
-      rel="noopener"
-      class="hover:text-brand-secondary"
-    >
+    <a href="#" target="_blank" rel="noopener" class="hover:text-brand-secondary">
       <i class="ri-graduation-cap-fill"></i>
     </a>
     <a
-      href="https://facebook.com/yourusername"
+      href="https://www.facebook.com/grace.gausie"
       target="_blank"
       rel="noopener"
       class="hover:text-brand-secondary"
     >
       <i class="ri-facebook-box-fill"></i>
     </a>
-    <a
-      href="https://instagram.com/yourusername"
-      target="_blank"
-      rel="noopener"
-      class="hover:text-brand-secondary"
-    >
+    <a href="#" target="_blank" rel="noopener" class="hover:text-brand-secondary">
       <i class="ri-instagram-line"></i>
     </a>
   </div>

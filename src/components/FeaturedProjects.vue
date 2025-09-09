@@ -3,7 +3,7 @@
     <div class="flex justify-between items-center py-3">
       <h2 class="text-lg md:text-2xl font-bold text-brand-primary mb-8">Featured Projects</h2>
       <a
-        href="https://github.com/your-github-username"
+        href="https://github.com/Gi1esi"
         target="_blank"
         rel="noopener noreferrer"
         class="inline-flex items-center gap-2 px-4 md:px-5 py-2 text-sm md:text-base bg-brand-secondary text-white font-medium rounded-md hover:bg-opacity-90 transition"
@@ -49,11 +49,13 @@ const posts = [
     title: 'Transactly',
     thumbnail:
       'https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    github: 'https://github.com/Gi1esi/transactly',
   },
   {
     title: 'NzeruBot',
     thumbnail:
       'https://images.unsplash.com/photo-1684487747720-1ba29cda82f8?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    github: 'https://github.com/Gi1esi/nzerubot_frontend',
   },
   {
     title: 'News-Bot',
