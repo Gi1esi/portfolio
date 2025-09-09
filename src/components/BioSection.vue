@@ -99,7 +99,7 @@
 
     <!-- Static Contact Section -->
     <div class="text-brand-secondary font-bold mt-10 text-xl">
-      <a href="/contact">Get in Touch..</a>
+      <router-link to="/contact">Get in Touch..</router-link>
     </div>
   </section>
 </template>
