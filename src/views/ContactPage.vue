@@ -12,7 +12,9 @@
       <!-- 3 Cards -->
       <div class="max-w-5xl mx-auto">
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="card rounded p-6 dark:bg-brand-primary/5">
+          <div
+            class="card rounded p-6 dark:bg-brand-primary/5 dark:hover:bg-brand-primary/20 hover:shadow-lg hover:scale-105 hover:transition-all duration-300"
+          >
             <h3 class="font-semibold text-brand-primary/90 text-center">Software Development</h3>
             <p class="text-base pt-3 text-gray-600 dark:text-white/50">
               If you have something in mind or just need help figuring it out, I’m open to working
@@ -20,7 +22,9 @@
             </p>
           </div>
 
-          <div class="card rounded p-6 dark:bg-brand-primary/5">
+          <div
+            class="card rounded p-6 dark:bg-brand-primary/5 dark:hover:bg-brand-primary/20 hover:shadow-lg hover:scale-105 hover:transition-all duration-300"
+          >
             <h3 class="font-semibold text-brand-primary/90 text-center">Tech Consulting</h3>
             <p class="text-base text-gray-600 dark:text-white/50">
               If you’re unsure or need help setting things up the right way, I can walk you through
@@ -28,7 +32,9 @@
             </p>
           </div>
 
-          <div class="card rounded p-6 dark:bg-brand-primary/5">
+          <div
+            class="card rounded p-6 dark:bg-brand-primary/5 dark:hover:bg-brand-primary/20 hover:shadow-lg hover:scale-105 hover:transition-all duration-300"
+          >
             <h3 class="font-semibold text-brand-primary/90 text-center">Mentorship</h3>
             <p class="text-base text-gray-600 dark:text-white/50">
               I know what it’s like to learn this stuff from scratch. I’m happy to help if you need
@@ -39,7 +45,7 @@
       </div>
 
       <!-- Contact Form -->
-      <div class="max-w-2xl mx-auto p-10 card dark:bg-transparent">
+      <div class="max-w-4xl md:max-w-2xl mx-auto p-4 md:p-10 card dark:bg-transparent">
         <h2 class="text-2xl font-extrabold text-brand-primary mb-8 text-center">Send a Message</h2>
 
         <form ref="form" @submit.prevent="sendEmail" class="space-y-6">

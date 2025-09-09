@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative py-20 px-5 my-7 max-w-6xl mx-auto flex justify-between items-center gap-5"
+    class="relative py-20 px-5 my-7 max-w-6xl mx-auto flex justify-between items-center gap-5 flex-wrap"
     style="min-height: 250px"
   >
     <div class="max-w-xl">

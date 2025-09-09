@@ -98,9 +98,9 @@
     </div>
 
     <!-- Static Contact Section -->
-    <div class="text-brand-secondary font-bold mt-10 text-xl">
+    <!-- <div class="text-brand-secondary font-bold mt-10 text-xl">
       <router-link to="/contact">Get in Touch..</router-link>
-    </div>
+    </div> -->
   </section>
 </template>
 

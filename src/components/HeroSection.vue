@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative md:max-h-screen md:mb-0 mb-12 py-6 max-w-6xl px-6 dark:bg-neutral-darkBg"
+    class="md:max-h-screen md:mb-0 mb-12 py-6 w-[100%] md:max-w-6xl px-6 dark:bg-neutral-darkBg"
   >
     <!-- Hero Image -->
     <!-- <background-squares></background-squares> -->
@@ -10,7 +10,7 @@
       class="text-white flex items-center justify-around md:justify-between flex-wrap-reverse md:max-w-[100%]"
     >
       <!-- Content container (50% width, left aligned) -->
-      <div class="text-left ml-8 space-y-6 md:px-14">
+      <div class="text-left md:ml-8 space-y-6 md:px-14">
         <div class="text-brand-primary/60 dark:text-white">
           <h1 class="text-2xl md:text-4xl font-bold">Hi, I'm Grace Gausi</h1>
           <p class="text-lg md:text-xl">Systems Engineer | Innovator</p>
