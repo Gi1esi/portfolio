@@ -17,8 +17,7 @@
           >
             <h3 class="font-semibold text-brand-primary/90 text-center">Software Development</h3>
             <p class="text-base pt-3 text-gray-600 dark:text-white/50">
-              If you have something in mind or just need help figuring it out, I’m open to working
-              on projects.
+              If you have something in mind, I am welcome open to working on projects.
             </p>
           </div>
 
@@ -27,8 +26,8 @@
           >
             <h3 class="font-semibold text-brand-primary/90 text-center">Tech Consulting</h3>
             <p class="text-base text-gray-600 dark:text-white/50">
-              If you’re unsure or need help setting things up the right way, I can walk you through
-              it.
+              If you’re unsure or need help setting things up, You have got an extra pair of hands
+              here
             </p>
           </div>
 
