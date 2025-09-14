@@ -61,7 +61,7 @@ const posts = [
     github: 'https://github.com/Gi1esi/nzerubot_frontend',
   },
   {
-    title: 'News-Bot',
+    title: 'Brielfy',
     thumbnail:
       'https://images.unsplash.com/photo-1621856751576-1ea064353795?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
