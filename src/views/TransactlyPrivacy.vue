@@ -87,7 +87,7 @@ const sections = [
   },
   {
     title: '3. Data We Do Not Collect',
-    paragraphs: 'The following data is never collected, transmitted, or stored remotely:',
+    paragraphs: ['The following data is never collected, transmitted, or stored remotely:'],
     bullets: [
       'Personal identification information (name, ID number, date of birth)',
       'SMS message content beyond transaction notifications',
@@ -105,7 +105,7 @@ const sections = [
   },
   {
     title: '5. Permissions Used',
-    paragraphs: 'The app requests the following Android permissions:',
+    paragraphs: ['The app requests the following Android permissions:'],
     bullets: [
       'READ_SMS — to detect and import transaction SMS messages',
       'RECEIVE_SMS — to detect new transactions in real time while the app is open',
