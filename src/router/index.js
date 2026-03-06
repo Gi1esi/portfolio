@@ -4,6 +4,8 @@ import LandingView from '@/views/LandingView.vue'
 import ProjectsPage from '@/views/ProjectsPage.vue'
 import AboutPage from '@/views/AboutPage.vue'
 import ContactPage from '@/views/ContactPage.vue'
+import TransactlyPrivacy from '@/views/TransactlyPrivacy.vue'
+import TransactlyContact from '@/views/TransactlyContact.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,13 +30,16 @@ const router = createRouter({
       name: 'Contact',
       component: ContactPage,
     },
-
-    // {
-    //   path: '/about',
-    //   name: 'about',
-
-    //   component: () => import('../views/AboutView.vue'),
-    // },
+    {
+      path: '/transactly/privacy',
+      name: 'TransactlyPrivacy',
+      component: TransactlyPrivacy,
+    },
+    {
+      path: '/transactly/contact',
+      name: 'TransactlyContact',
+      component: TransactlyContact,
+    },
   ],
 })
 
