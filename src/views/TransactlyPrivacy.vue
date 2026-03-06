@@ -11,7 +11,7 @@
         <p class="text-sm text-gray-500 dark:text-gray-400">
           Last updated: {{ lastUpdated }}
         </p>
-        <p class="text-base text-gray-600 dark:text-gray-300">
+        <p class="text-base text-gray-600 dark:text-gray-300 leading-relaxed whitespace-normal break-words">
           Transactly is a personal finance app that helps you track your spending by reading
           bank and mobile money SMS notifications on your device. Your privacy is the foundation
           the app is built on.
@@ -27,21 +27,25 @@
           class="card rounded-xl p-6 dark:bg-brand-primary/5 border border-transparent dark:border-brand-primary/10 space-y-3"
         >
           <h2 class="text-lg font-bold text-brand-primary">{{ section.title }}</h2>
-          <p
-            v-for="(para, i) in section.paragraphs"
-            :key="i"
-            class="text-base text-gray-600 dark:text-gray-300 leading-relaxed"
-          >
-            {{ para }}
-          </p>
-          <ul
-            v-if="section.bullets"
-            class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300"
-          >
-            <li v-for="(bullet, i) in section.bullets" :key="i" class="text-base">
-              {{ bullet }}
-            </li>
-          </ul>
+
+          <div class="space-y-3">
+            <p
+              v-for="(para, i) in section.paragraphs"
+              :key="i"
+              class="text-base text-gray-600 dark:text-gray-300 leading-relaxed whitespace-normal break-words"
+            >
+              {{ para }}
+            </p>
+
+            <ul
+              v-if="section.bullets"
+              class="list-disc list-inside space-y-1 text-gray-600 dark:text-gray-300"
+            >
+              <li v-for="(bullet, i) in section.bullets" :key="i" class="text-base leading-relaxed">
+                {{ bullet }}
+              </li>
+            </ul>
+          </div>
         </div>
 
       </div>
@@ -119,13 +123,7 @@ const sections = [
     ],
   },
   {
-    title: '7. Children\'s Privacy',
-    paragraphs: [
-      'Transactly is not directed at children under 13. It does not knowingly collect any information from children.',
-    ],
-  },
-  {
-    title: '8. Changes to This Policy',
+    title: '7. Changes to This Policy',
     paragraphs: [
       'If this privacy policy changes, the updated version will be posted at this URL with a new "Last updated" date. Continued use of the app after changes constitutes acceptance of the updated policy.',
     ],
